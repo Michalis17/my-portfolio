@@ -1,20 +1,22 @@
 import React from "react"
-import CursorFollower from "./components/cursorFollower/CursorFollower"
 import PortfolioPage from "./pages/Porfolio/PortfolioPage"
 
 const App: React.FC = ()=> {
-  // TODO: refactor some code make it look more neat
-  // !transitions should maybe be in hero section instead in the component itsself 
-  // TODO: fix on load animations
-  // TODO: animation when tab is clicked 
 
+  // !: REDESIGN THE WHOLE PORTFOLIO 
+  // 1 hour on refactoring and file structure commit then start major changes
+    // TODO: profile card component
+    // commit changes
+    // TODO: reusable work link components on profile card component
+    // commit changes 
+    // TODO: project img component
+    // commit changes
+
+  // !transitions should maybe be in hero section component instead in the component itsself 
 
   return (
-    <div className="overflow-x-hidden sm:overflow-y-hidden">
+    <div className="overflow-x-hidden">
       <PortfolioPage/>
-
-      <CursorFollower/>
-
     </div>
   )
 }
