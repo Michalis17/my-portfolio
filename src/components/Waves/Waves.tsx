@@ -7,7 +7,7 @@ const Waves: React.FC = () => {
             height='100%'
             viewBox='0 0 1100 300'
             xmlns="http://www.w3.org/2000/svg"
-            className="transition duration-300 ease-in-out delay-150  transform rotate-180"
+            className="transition duration-300 ease-in-out delay-150  transform rotate-180 rounded-b-2xl"
         >
 
             <defs>

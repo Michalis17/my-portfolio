@@ -15,7 +15,7 @@ const App: React.FC = ()=> {
   // !transitions should maybe be in hero section component instead in the component itsself 
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="bg-my-black h-screen flex justify-center">
       <PortfolioPage/>
     </div>
   )

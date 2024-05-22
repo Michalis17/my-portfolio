@@ -14,12 +14,13 @@ const transition: React.FC = () => {
     return (
         <Transition
             show={show}
-            enter="transition ease-out duration-1000"
-            enterFrom="opacity-0 transform -translate-y-10"
-            enterTo="opacity-100 transform translate-y-0"
+            enter="transition-transform transition-opacity duration-1000"
+            enterFrom="opacity-0 transform -translate-x-full"
+            enterTo="opacity-100 transform translate-x-0"
         >
 
-        </Transition>)}
+        </Transition>)
+}
 
 
 export default transition
