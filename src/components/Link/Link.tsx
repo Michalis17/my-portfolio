@@ -13,7 +13,7 @@ const Link: React.FC<Props> = ({ url, icon, label, download }) => {
     <a
       href={url}
       {...(download ? { download: '' } : {})}
-      className='relative flex items-center justify-center border rounded border-electric-violet-400 w-full py-2 px-4'
+      className='relative flex items-center justify-center border rounded border-my-blue-600 w-full py-2 px-4'
     >
       <div className='absolute left-4'>
         {icon}

@@ -1,15 +1,15 @@
 import React from 'react'
 import ProfileCard from '../../components/ProfileCard/ProfileCard'
-// for testing
-import ProjectImg from '../../components/ProjectImg/ProjectImg'
+import ProjectsCard from '../../components/ProjectsCard/ProjectsCard'
 
-// grid grid-cols-1 grid-rows-10
 const PortfolioPage: React.FC = () => {
   return (
-    <div className='max-w-6xl h-full flex flex-row gap-12 items-center md:p-16'>
-      <ProfileCard/>
-      <div className='border border-electric-violet-500 md:w-2/3 h-full'>
-        <ProjectImg imgFile='src\assets\mikedesign.jpg' />
+    <div className='p-3 sm:p-6 max-w-7xl '>
+      <div className='flex flex-col md:flex-row gap-8'>
+        <ProfileCard
+        name='Michalis Michaelides' role='Junior Front-End Developer'
+          about="Hi 👋, I'm an aspiring TypeScript React developer who loves food and fitness. With a background in marketing, I discovered my passion for front-end development and am excited to build a career in it. Also I think pandas are really cute!"  />
+        <ProjectsCard />
       </div>
     </div>
   )
