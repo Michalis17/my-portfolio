@@ -1,6 +1,6 @@
 import React from 'react'
 interface Props {
-    imgFile: string,
+    imgFile?: string,
     name?: string
 }
 
