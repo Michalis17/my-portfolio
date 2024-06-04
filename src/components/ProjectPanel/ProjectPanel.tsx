@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react'
 import ProjectImg from '../ProjectImg/ProjectImg'
 
-
 interface Props {
     title: string,
     length: string,
@@ -12,9 +11,7 @@ interface Props {
     challenge: string,
     contribution: string,
     result: string,
-    imgFile?: string
-
-
+    projectImg: ReactNode
 }
 
 const ProjectPanel: React.FC<Props> = (
@@ -28,14 +25,11 @@ const ProjectPanel: React.FC<Props> = (
         challenge,
         contribution,
         result,
-        imgFile
+        projectImg
     }
 ) => {
 
-    
-
     return (
-
         <div>
             <div className="flex flex-col sm:flex-row gap-6">
                 {/* tittle and other text content  */}
@@ -74,7 +68,7 @@ const ProjectPanel: React.FC<Props> = (
                     </div>
                 </div>
                 {/* img */}
-                <div className="sm:w-1/2"><ProjectImg imgFile={imgFile}/></div>
+                <div className="sm:w-1/2"><ProjectImg img={projectImg} /></div>
             </div>
             {/* more text content */}
             <div className='pt-6 flex flex-col gap-5'>
@@ -92,7 +86,6 @@ const ProjectPanel: React.FC<Props> = (
                 </div>
             </div>
         </div>
-        
     )
 }
 
