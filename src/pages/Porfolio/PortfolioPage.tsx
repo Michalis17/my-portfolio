@@ -8,7 +8,7 @@ const PortfolioPage: React.FC = () => {
       <div className='flex flex-col md:flex-row gap-8'>
         <ProfileCard
         name='Michalis Michaelides' role='Junior Front-End Developer'
-          about="Hi 👋, I'm an aspiring TypeScript React developer who loves food and fitness. With a background in marketing, I discovered my passion for front-end development and am excited to build a career in it. Also I think pandas are really cute!"  />
+          about="Hi 👋, I'm a passionate TypeScript React developer based in London, UK. With a background in marketing, I discovered my passion for front-end development and am excited to build a career in it."  />
         <ProjectsCard />
       </div>
     </div>

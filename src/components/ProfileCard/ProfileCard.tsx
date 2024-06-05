@@ -26,7 +26,7 @@ const ProfileCard: React.FC<Props> = ({ name, about, role }) => {
             enterFrom="opacity-0 transform -translate-x-full"
             enterTo="opacity-100 transform translate-x-0"
         >
-            <div className='rounded-2xl shadow-lg sm:shadow-my-blue-700 flex flex-col gap-4 justify-stretch text-white  md:w-1/3 max-h-[700px] pb-3'>
+            <div className='rounded-2xl shadow-lg shadow-my-blue-700 flex flex-col gap-4 justify-stretch text-white  md:w-1/3 max-h-[700px] pb-3'>
                 <Avatar/>
                 <div className='w-full px-3 lg:px-6 flex flex-col justify-normal content-center gap-6  h-full '>
                     <div className='flex flex-col gap-4 items-center justify-center'>
@@ -38,7 +38,7 @@ const ProfileCard: React.FC<Props> = ({ name, about, role }) => {
                     </div>
 
                     {/* links //TODO PUT DOWNLOADBLE CV */}
-                    <div className=' flex flex-col gap-4'>
+                    <div className=' flex flex-col gap-4 py-3'>
                         <Link icon={<GithubIcon size={25} />} label='Github' url='https://github.com/Michalis17' />
                         <Link icon={<LinkedinIcon size={25} />} label='LinkedIn' url='https://www.linkedin.com/in/michaelides17/' />
                         <Link icon={<CvIcon size={25}/>} label='CV' url='https://www.linkedin.com/in/michaelides17/' />
