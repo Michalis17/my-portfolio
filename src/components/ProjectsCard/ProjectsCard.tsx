@@ -8,6 +8,7 @@ import ReactIcon from '../../assets/Icons/react';
 import TailwindIcon from '../../assets/Icons/tailwind';
 import TsIcon from '../../assets/Icons/ts';
 import ProjectPanel from '../ProjectPanel/ProjectPanel';
+import AboutMe from '../AboutMe/AboutMe';
 // Image Imports go here:
 import weatherIMG from '../../assets/weatherOldV.png'
 
@@ -58,21 +59,7 @@ const ProjectsCard: React.FC = () => {
           <TabPanels className='pt-8'>
             {/* About Me */}
             <TabPanel>
-              <div className='w-full flex flex-col justify-center items-center gap-3'>
-                <div className='aspect-video w-4/5 bg-slate-50'>
-
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos adipisci repellat sed dolorum, eius qui ullam dolores? Tempora dicta est voluptatem inventore corporis libero, voluptatibus ex repellat labore animi cum?</p>
-                <div className='flex flex-row gap-2 items-center justify-center'>
-                  <div className='aspect-square w-1/3 bg-slate-50 '></div>
-                  <p className='w-1/2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate exercitationem non iure hic consectetur explicabo delectus tempore, excepturi neque commodi obcaecati sapiente! Veritatis voluptatum, velit deleniti nesciunt at repellendus ad.</p>
-                </div>
-                <div className='flex flex-row-reverse gap-2 items-center justify-center'>
-                  <div className='aspect-square w-1/3 bg-slate-50 '></div>
-                  <p className='w-1/2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate exercitationem non iure hic consectetur explicabo delectus tempore, excepturi neque commodi obcaecati sapiente! Veritatis voluptatum, velit deleniti nesciunt at repellendus ad.</p>
-                </div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quas cum fugiat possimus illo minima! Quisquam tempore quam amet saepe veritatis repudiandae ab porro qui delectus nam atque, doloremque iure omnis aperiam sequi doloribus minima quibusdam? Quod, eligendi perferendis ex tempore ut culpa natus repellat saepe neque molestias nemo fugit repellendus exercitationem ipsa illum amet dicta odit. Natus, illum iusto voluptatum ratione quod doloremque ut voluptates magni officia libero possimus excepturi perferendis sapiente. Odio qui inventore possimus obcaecati, quia tempora, praesentium necessitatibus quos natus maiores, quis asperiores dignissimos non sit. Ratione deleniti voluptatibus, tempore magni iste sequi distinctio atque optio a iusto maxime, pariatur debitis. Quas hic nostrum aspernatur aperiam necessitatibus. Alias ipsa ea excepturi ad, explicabo in voluptas ipsam iusto repellendus. Tempora iusto perspiciatis maxime itaque a suscipit, sapiente aliquam consectetur quisquam? A, nam enim fugiat incidunt architecto, quibusdam voluptates numquam adipisci vel quaerat sequi molestias porro ex, rem inventore fuga omnis corrupti consequuntur unde eaque alias voluptatem quis tempora officiis. Aliquid fugit ab ipsum optio necessitatibus, impedit inventore rem fugiat quos repudiandae. Repellat, vitae eius. Est consectetur, nostrum, ad quam debitis dolor dolorem consequuntur possimus tempora officiis quo, illo fuga expedita. Quibusdam iste repudiandae hic iure totam incidunt quod nisi vitae provident corrupti dolorem recusandae, dolorum ab, repellendus dolor ad sequi pariatur. Error adipisci reiciendis similique distinctio deserunt vel consequatur nesciunt laudantium accusantium libero at perferendis minima illum est, porro tenetur. Et eum ad inventore molestiae? Ea, maiores mollitia, ex ut minus sunt laborum dolorem possimus iste quis sed deleniti quae hic cupiditate sint sequi fuga excepturi placeat animi! Quod officia maxime molestiae, perspiciatis quia exercitationem impedit earum numquam, iusto blanditiis omnis molestias vero? Necessitatibus, deserunt nobis. Voluptas at necessitatibus delectus mollitia qui amet velit ullam ad doloribus est distinctio hic, ratione officiis tenetur, nemo dolor. Eligendi facere iusto omnis, atque vel nostrum id ipsum quod quasi numquam laborum modi esse quas illo minus nesciunt ad non nemo accusamus, aliquid mollitia! Nulla vero harum quis fuga, quasi voluptatibus tenetur odio laborum aperiam excepturi eum quas, sed enim laudantium. Incidunt nostrum accusantium ducimus aperiam optio aliquid, animi impedit sunt quibusdam veritatis doloribus cum, culpa beatae rerum nisi quasi facere laborum quae quaerat? Deserunt aspernatur id perferendis suscipit harum laboriosam expedita porro, sit quibusdam, cumque numquam, quo repudiandae nisi sed. Magni dolorem vero, fugiat ipsum dolore iure repellat distinctio soluta, mollitia maxime cumque enim repudiandae modi placeat repellendus saepe! Harum?
-              </div>
+              <AboutMe/>
             </TabPanel>
             {/* Project 1  */}
             <TabPanel className=''>
