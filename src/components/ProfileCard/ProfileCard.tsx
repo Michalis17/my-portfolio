@@ -5,7 +5,7 @@ import LinkedinIcon from '../../assets/Icons/linkedin'
 import GithubIcon from '../../assets/Icons/github'
 import CvIcon from '../../assets/Icons/cv'
 import { Transition } from '@headlessui/react';
-
+import CV from '../../assets/WebDevCV.pdf'
 interface Props {
     name: string,
     about: string,
@@ -39,9 +39,9 @@ const ProfileCard: React.FC<Props> = ({ name, about, role }) => {
 
                     {/* links //TODO PUT DOWNLOADBLE CV */}
                     <div className=' flex flex-col gap-4 py-3'>
-                        <Link icon={<GithubIcon size={25} />} label='Github' url='https://github.com/Michalis17' />
-                        <Link icon={<LinkedinIcon size={25} />} label='LinkedIn' url='https://www.linkedin.com/in/michaelides17/' />
-                        <Link icon={<CvIcon size={25}/>} label='CV' url='https://www.linkedin.com/in/michaelides17/' />
+                        <Link icon={<GithubIcon size={25} />} label='Github' href='https://github.com/Michalis17'/>
+                        <Link icon={<LinkedinIcon size={25} />} label='LinkedIn' href='https://www.linkedin.com/in/michaelides17/' />
+                        <Link icon={<CvIcon size={25}/>} label='CV' href={CV} download />
                          
                     </div>
                 </div>

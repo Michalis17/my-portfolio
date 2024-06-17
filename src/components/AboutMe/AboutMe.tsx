@@ -3,6 +3,7 @@ import React from 'react'
 const AboutMe: React.FC = () => {
     return (
         <div>
+          <h1 className='font-bold text-2xl'>from Profesional chef 👨🏼‍🍳to front-end web developer👨🏼‍💻</h1>
             <p>
                 As a 25-year-old graduate with a BSc in Marketing and Management, my journey has been marked by a relentless pursuit of excellence and a passion for diverse experiences. I have honed my skills across various fields, from the fast-paced culinary world as a professional chef to the strategic landscape of marketing as an intern at an email marketing solutions company. These roles have equipped me with a high level of expertise, adaptability, and a strong foundation in communication and marketing research. However, my true calling has always been in the realm of technology. The satisfaction I find in building websites and learning new technologies has driven me to devote myself fully to becoming the best and most resourceful front-end developer I can be.
             </p>

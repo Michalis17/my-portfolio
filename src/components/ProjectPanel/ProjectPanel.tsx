@@ -8,7 +8,8 @@ interface Props {
     role: string,
     link?: string,
     linkName?: string
-    tools: ReactNode,
+    tools: ReactNode, //tech stack icons
+    overview: string,
     challenge: string,
     contribution: string,
     result: string,
@@ -24,6 +25,7 @@ const ProjectPanel: React.FC<Props> = (
         link,
         linkName,
         tools,
+        overview,
         challenge,
         contribution,
         result,
@@ -62,15 +64,19 @@ const ProjectPanel: React.FC<Props> = (
                     <div className="flex flex-row flex-wrap gap-6">
                         <div className="flex flex-col gap-1 w-fit">
                             <p className="text-gray font-semibold">View Project</p>
-                            <a href={link} target='_blank' className="font-medium">{linkName}</a>
+                            <a href={link} target='_blank' className="font-medium hover:underline">{linkName}</a>
                         </div>
                     </div>
                 </div>
                 {/* img */}
                 <div className="sm:w-1/2"><ProjectImg img={projectImg} /></div>
             </div>
-            {/* more text content */}
+            {/* Main text content */}
             <div className='pt-6 pb-2 flex flex-col gap-5'>
+                <div>
+                    <h2 className="font-semibold text-xl pb-2">Overview</h2>
+                    <p className="font-normal text-base">{overview}</p>
+                </div>
                 <div>
                     <h2 className="font-semibold text-xl pb-2">Challenge</h2>
                     <p className="font-normal text-base">{challenge}</p>

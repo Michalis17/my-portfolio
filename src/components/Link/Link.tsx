@@ -1,18 +1,16 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, AnchorHTMLAttributes } from 'react'
 
-interface Props {
-  url: string,
+interface Props extends AnchorHTMLAttributes<HTMLAnchorElement>  {
   label: string,
   icon: ReactNode,
-  download?: boolean,
 }
 
-const Link: React.FC<Props> = ({ url, icon, label, download }) => {
+const Link: React.FC<Props> = ({ icon, label, ...props}) => {
 
   return (
     <a
-      href={url}
-      {...(download ? { download: '' } : {})}
+    {...props}
+      target='_blank'
       className='relative flex items-center justify-center border rounded border-my-blue-600 w-full py-2 px-4'
     >
       <div className='absolute left-4'>
