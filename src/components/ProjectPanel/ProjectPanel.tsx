@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import ProjectImg from '../ProjectImg/ProjectImg'
+import ProjectCarousel from '../ProjectImg/ProjectCarousel'
 
 interface Props {
     title: string,
@@ -13,7 +13,7 @@ interface Props {
     challenge: string,
     contribution: string,
     result: string,
-    projectImg: ReactNode
+    images: ReactNode[]
 }
 
 const ProjectPanel: React.FC<Props> = (
@@ -29,7 +29,7 @@ const ProjectPanel: React.FC<Props> = (
         challenge,
         contribution,
         result,
-        projectImg
+        images
     }
 ) => {
 
@@ -69,7 +69,7 @@ const ProjectPanel: React.FC<Props> = (
                     </div>
                 </div>
                 {/* img */}
-                <div className="sm:w-1/2"><ProjectImg img={projectImg} /></div>
+                <div className="sm:w-1/2"><ProjectCarousel images={images} /></div>
             </div>
             {/* Main text content */}
             <div className='pt-6 pb-2 flex flex-col gap-5'>

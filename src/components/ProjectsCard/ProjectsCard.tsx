@@ -21,6 +21,11 @@ const ProjectsCard: React.FC = () => {
     setShow(true);
   }, []);
 
+  // array of Images for each project
+  const platdIMGs = [
+    <img src={PlatdIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+    
+  ]
   return (
     <Transition
       show={show}
@@ -28,12 +33,13 @@ const ProjectsCard: React.FC = () => {
       enterFrom="opacity-0 transform translate-x-full"
       enterTo="opacity-100 transform translate-x-0"
     >
-      <div className=" md:w-2/3 h-[700px] overflow-y-scroll border border-my-blue-900 shadow-md shadow-my-blue-700 pt-3 sm:px-6 sm:pt-6 rounded-2xl">
+      <div className=" md:w-2/3 h-[700px] overflow-y-scroll overflow-x-hidden border border-my-blue-900 shadow-md shadow-my-blue-700 pt-3 sm:px-6 sm:pt-6 rounded-2xl">
 
-        <TabGroup className='text-white'>
+        <TabGroup className='text-white z-10'>
 
           {/* Tab buttons container */}
-          <TabList className=' w-full border-b border-my-blue-900 rounded-sm text-gray text-sm font-semibold'>
+        
+          <TabList className='w-full border-b border-my-blue-900 rounded-sm text-gray text-sm font-semibold'>
 
             <Tab className='focus:outline-none data-[selected]:border-b-2 data-[selected]:border-my-blue-600 data-[selected]:text-white rounded-b-sm mx-4 py-3'>
               About Me
@@ -55,18 +61,20 @@ const ProjectsCard: React.FC = () => {
             </Tab>
 
           </TabList>
+          
 
           {/* Tab content container */}
-          <TabPanels className='pt-8'>
+          
+          <TabPanels className='pt-8 '>
             {/* About Me */}
             <TabPanel>
               <AboutMe/>
             </TabPanel>
             {/* Project 1  */}
-            <TabPanel className=''>
+            <TabPanel>
               <ProjectPanel
-                title='Platd: a marketplace for digital cookbooks'
-                projectImg={<img src={PlatdIMG} alt='weather' className='rounded-xl h-full' />}
+                title='Platd: marketplace for digital cookbooks'
+                images={platdIMGs}
                 tools={<div className='flex gap-1'><ReactIcon size={30} /><TailwindIcon size={30} /><TsIcon size={30} /></div>}
                 length='6 mounths'
                 company='Platd'
@@ -134,7 +142,6 @@ const ProjectsCard: React.FC = () => {
               />
             </TabPanel>
           </TabPanels>
-
         </TabGroup>
       </div>
     </Transition>
