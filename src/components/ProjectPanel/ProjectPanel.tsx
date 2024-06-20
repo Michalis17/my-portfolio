@@ -63,8 +63,8 @@ const ProjectPanel: React.FC<Props> = (
                     </div>
                     <div className="flex flex-row flex-wrap gap-6">
                         <div className="flex flex-col gap-1 w-fit">
-                            <p className="text-gray font-semibold">View Project</p>
-                            <a href={link} target='_blank' className="font-medium hover:underline">{linkName}</a>
+                            <p className="text-gray font-semibold">Project</p>
+                            <a href={link} target='_blank' className="font-medium underline">{linkName}</a>
                         </div>
                     </div>
                 </div>

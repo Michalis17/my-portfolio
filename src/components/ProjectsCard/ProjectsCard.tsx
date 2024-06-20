@@ -10,8 +10,18 @@ import TsIcon from '../../assets/Icons/ts';
 import ProjectPanel from '../ProjectPanel/ProjectPanel';
 import AboutMe from '../AboutMe/AboutMe';
 // Image Imports go here:
-import weatherIMG from '../../assets/weatherOldV.png'
-import PlatdIMG from '../../assets/platdIMG.png'
+import weatherIMG from '../../assets/ProjectsAssets/WeatherJournal/weatherOldV.png'
+// Platd imgage imports
+import PlatdLandning1 from '../../assets/ProjectsAssets/PLatd/platdIMG.png'
+import PlatdLandning2 from '../../assets/ProjectsAssets/PLatd/Platd-landing-page2.png'
+import PlatdLandning3 from '../../assets/ProjectsAssets/PLatd/Platd-landing-page3.png'
+import PlatdLandning4 from '../../assets/ProjectsAssets/PLatd/Platd-landing-page4.png'
+import PlatdComIMG1 from '../../assets/ProjectsAssets/PLatd/Platd-component.png'
+import PlatdComIMG2 from '../../assets/ProjectsAssets/PLatd/Platd-component2.png'
+import PlatdLoginIMG from '../../assets/ProjectsAssets/PLatd/Platd-login.png'
+import PlatdSignupIMG from '../../assets/ProjectsAssets/PLatd/Platd-signup.png'
+import PlatdSignupIMG2 from '../../assets/ProjectsAssets/PLatd/Platd-signup2.png'
+import platdgif from '../../assets/ProjectsAssets/PLatd/PLatd-Landing-GIF.gif'
 
 const ProjectsCard: React.FC = () => {
 
@@ -23,8 +33,26 @@ const ProjectsCard: React.FC = () => {
 
   // array of Images for each project
   const platdIMGs = [
-    <img src={PlatdIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={platdgif} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={PlatdLandning1} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={PlatdLandning2} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={PlatdLandning3} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={PlatdLandning4} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={PlatdComIMG1} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={PlatdComIMG2} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={PlatdLoginIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={PlatdSignupIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={PlatdSignupIMG2} alt='weather' className='rounded-xl h-full object-cover' />,
     
+  ]
+  const travelIMGs = [
+    <img src={weatherIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+  ]
+  const articleIMGs = [
+    <img src={weatherIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+  ]
+  const weatherIMGs = [
+    <img src={weatherIMG} alt='weather' className='rounded-xl h-full object-cover' />,
   ]
   return (
     <Transition
@@ -36,9 +64,7 @@ const ProjectsCard: React.FC = () => {
       <div className=" md:w-2/3 h-[700px] overflow-y-scroll overflow-x-hidden border border-my-blue-900 shadow-md shadow-my-blue-700 pt-3 sm:px-6 sm:pt-6 rounded-2xl">
 
         <TabGroup className='text-white z-10'>
-
           {/* Tab buttons container */}
-        
           <TabList className='w-full border-b border-my-blue-900 rounded-sm text-gray text-sm font-semibold'>
 
             <Tab className='focus:outline-none data-[selected]:border-b-2 data-[selected]:border-my-blue-600 data-[selected]:text-white rounded-b-sm mx-4 py-3'>
@@ -61,10 +87,7 @@ const ProjectsCard: React.FC = () => {
             </Tab>
 
           </TabList>
-          
-
           {/* Tab content container */}
-          
           <TabPanels className='pt-8 '>
             {/* About Me */}
             <TabPanel>
@@ -80,7 +103,7 @@ const ProjectsCard: React.FC = () => {
                 company='Platd'
                 role='Front-End Developer'
                 link='https://platd.io/'
-                linkName='Platd Landing Page'
+                linkName='Platd.io'
                 overview='Working with the early-stage startup Platd, a marketplace platform for food content creators to monetize their recipes by creating and selling digital cookbooks, has been an invaluable learning experience. My main responsibility was transforming Figma designs into functional front-end code. I utilized React in conjunction with TypeScript to develop reusable UI components, including the login and signup flows and the marketing landing page. Additionally, I employed Tailwind CSS for styling and Headless UI, a React component library, to assist in developing certain components. This project exposed me to various tools and resources commonly used by developers in the workplace.'
 
                 challenge='The biggest challenge was creating components from scratch, as Headless UI didn’t offer a non-styled sidebar component. I also struggled with making the landing page responsive while adhering to the design standards set in the Figma designs. These tasks required a deep understanding of new technologies like React, which, while exciting, also posed significant hurdles.'
@@ -98,6 +121,7 @@ const ProjectsCard: React.FC = () => {
                 length='4 weeks'
                 company='Udacity'
                 role='Course assignment'
+                images={travelIMGs}
                 link='https://github.com/Michalis17/Travel-Buddy-WebApp'
                 linkName='Github link'
                 overview='Travel Buddy was my capstone project for the Udacity Front-End Web Development Nanodegree, designed to push my JavaScript skills to their limits. This project involved dynamically manipulating the DOM, creating routes to a backend server, integrating external APIs, and using build tools like Webpack to create development and production builds. The application displays weather information for a user’s trip destination, along with a countdown timer and an image. It features a suggestive search bar that offers city suggestions as the user types and a date input field. Responses from the server are saved in local storage, ensuring data persists even when the user exits the app.'
@@ -115,6 +139,7 @@ const ProjectsCard: React.FC = () => {
                 length='3 weeks'
                 company='Udacity'
                 role='Course assignment'
+                images={articleIMGs}
                 link='https://github.com/Michalis17/Article-analyzer-Web-App/tree/master'
                 linkName='Github link'
                 overview='As part of my Front-End Web Development Nanodegree, I built a web application that allows users to run Natural Language Processing (NLP) on articles or blogs using the Sentiment Analysis API from MeaningCloud. Users input a URL of a blog or article, and the server responds with whether the content is positive, neutral, or negative, highlighting the most relevant parts. This project introduced me to build tools like Webpack for bundling code into a production build and integrating unit testing with Jest, offering a comprehensive learning experience.'
@@ -128,7 +153,7 @@ const ProjectsCard: React.FC = () => {
             <TabPanel className=''>
               <ProjectPanel
                 title='Weather-Journal App'
-                projectImg={<img src={weatherIMG} alt='weather' className='rounded-xl' />}
+                images={weatherIMGs}
                 tools={<div className='flex gap-1'><HtmlIcon size={30} /><CssIcon size={30} /><JsIcon size={30} /></div>}
                 length='2 weeks'
                 company='Udacity Course'
