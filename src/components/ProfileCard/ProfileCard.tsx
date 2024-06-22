@@ -5,7 +5,7 @@ import LinkedinIcon from '../../assets/Icons/linkedin'
 import GithubIcon from '../../assets/Icons/github'
 import CvIcon from '../../assets/Icons/cv'
 import { Transition } from '@headlessui/react';
-import CV from '../../assets/WebDevCV.pdf'
+import CV from '../../assets/ProjectsAssets/My WebDev CV.pdf'
 interface Props {
     name: string,
     about: string,

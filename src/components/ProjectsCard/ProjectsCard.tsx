@@ -33,7 +33,7 @@ const ProjectsCard: React.FC = () => {
 
   // array of Images for each project
   const platdIMGs = [
-    <img src={platdgif} alt='weather' className='rounded-xl h-full object-cover' />,
+    
     <img src={PlatdLandning1} alt='weather' className='rounded-xl h-full object-cover' />,
     <img src={PlatdLandning2} alt='weather' className='rounded-xl h-full object-cover' />,
     <img src={PlatdLandning3} alt='weather' className='rounded-xl h-full object-cover' />,
@@ -43,7 +43,7 @@ const ProjectsCard: React.FC = () => {
     <img src={PlatdLoginIMG} alt='weather' className='rounded-xl h-full object-cover' />,
     <img src={PlatdSignupIMG} alt='weather' className='rounded-xl h-full object-cover' />,
     <img src={PlatdSignupIMG2} alt='weather' className='rounded-xl h-full object-cover' />,
-    
+    <img src={platdgif} alt='weather' className='rounded-xl h-full object-cover' />,
   ]
   const travelIMGs = [
     <img src={weatherIMG} alt='weather' className='rounded-xl h-full object-cover' />,
@@ -99,16 +99,15 @@ const ProjectsCard: React.FC = () => {
                 title='Platd: marketplace for digital cookbooks'
                 images={platdIMGs}
                 tools={<div className='flex gap-1'><ReactIcon size={30} /><TailwindIcon size={30} /><TsIcon size={30} /></div>}
-                length='6 mounths'
+                length='6 months'
                 company='Platd'
                 role='Front-End Developer'
                 link='https://platd.io/'
                 linkName='Platd.io'
-                overview='Working with the early-stage startup Platd, a marketplace platform for food content creators to monetize their recipes by creating and selling digital cookbooks, has been an invaluable learning experience. My main responsibility was transforming Figma designs into functional front-end code. I utilized React in conjunction with TypeScript to develop reusable UI components, including the login and signup flows and the marketing landing page. Additionally, I employed Tailwind CSS for styling and Headless UI, a React component library, to assist in developing certain components. This project exposed me to various tools and resources commonly used by developers in the workplace.'
-
-                challenge='The biggest challenge was creating components from scratch, as Headless UI didn’t offer a non-styled sidebar component. I also struggled with making the landing page responsive while adhering to the design standards set in the Figma designs. These tasks required a deep understanding of new technologies like React, which, while exciting, also posed significant hurdles.'
-                contribution='To tackle these challenges, I systematically broke down the component behavior and conceptualized how to implement it in code. I frequently referred to documentation for the technologies and libraries I was using and researched best practices relevant to my project. For responsiveness issues, I sought advice from senior developers and used tools like ChatGPT for generating boilerplate code and debugging, though I relied on it cautiously.'
-                result='I successfully completed my deliverables, and the founders were satisfied with my work. My contributions were integral to a product that will be used by real users. This project significantly improved my skills as a front-end developer and deepened my understanding of modern web development technologies, leaving me eager to learn even more.'
+                overview='I joined Platd, an early-stage startup, as a front-end developer. Platd is a marketplace platform that helps food content creators monetize their recipes by creating and selling digital cookbooks. My main responsibility was transforming Figma designs into functional front-end code using React and TypeScript, developing reusable UI components, login and signup flows, and the marketing landing page.'
+                challenge='The biggest challenge was creating components from scratch, as Headless UI didn’t offer a non-styled sidebar component. Making the landing page responsive while adhering to Figma design standards also posed significant hurdles.'
+                contribution='To tackle these challenges, I systematically broke down component behavior and conceptualized the implementation. I referred to documentation for technologies and libraries, researched best practices, and sought advice from the senior developer. For responsiveness issues, I used tools like ChatGPT for boilerplate code and debugging, though cautiously.'
+                result='I successfully completed my deliverables, and the founders were satisfied with my work. My contributions were integral to a product that will be used by real users. This project significantly improved my front-end development skills and deepened my understanding of modern web development frameworks and libraries, leaving me eager to learn more.'
 
               />
             </TabPanel>
@@ -124,10 +123,10 @@ const ProjectsCard: React.FC = () => {
                 images={travelIMGs}
                 link='https://github.com/Michalis17/Travel-Buddy-WebApp'
                 linkName='Github link'
-                overview='Travel Buddy was my capstone project for the Udacity Front-End Web Development Nanodegree, designed to push my JavaScript skills to their limits. This project involved dynamically manipulating the DOM, creating routes to a backend server, integrating external APIs, and using build tools like Webpack to create development and production builds. The application displays weather information for a user’s trip destination, along with a countdown timer and an image. It features a suggestive search bar that offers city suggestions as the user types and a date input field. Responses from the server are saved in local storage, ensuring data persists even when the user exits the app.'
-                challenge='I faced several significant challenges: creating the suggestive search bar, ensuring asynchronous code execution, and setting up my production and development builds with Webpack. Configuring Webpack was particularly difficult, especially getting the correct entry point file and ensuring CSS styles appeared in the production build. The suggestive search bar required breaking down complex tasks into manageable steps, which, although challenging, was a more enjoyable problem to solve than the Webpack configuration.'
-                contribution="To handle the Webpack configuration issues, I created three config files instead of two: one for the production build, one for the development build, and a common config file for shared elements. This modular approach made it easier to identify and fix issues. Through trial and error and extensive documentation review, I eventually achieved a working configuration. For implementing difficult features, I isolated each into its own function to be used within the main app's logic, ensuring clarity and maintainability."
-                result="I successfully completed and passed the Front-End Web Development course by submitting this project. However, in hindsight, I'm not entirely satisfied with the outcome as my focus on functionality and Webpack configuration led me to neglect the visual design. While I was initially proud of completing this project, I now see numerous areas for improvement. This realization has driven me to use the new technologies I've learned to enhance the project further. My dissatisfaction fuels my self-motivation to continually improve after every project, striving for excellence in both functionality and design."
+                overview='Travel Buddy was my capstone project for the Udacity Front-End Web Development Nanodegree. The application displays weather information for a user’s trip destination, along with a countdown timer and an image. It features a suggestive search bar that offers city suggestions as the user types and a date input field. Server responses are saved in local storage, ensuring data persists even when the user exits the app. This project involved dynamic DOM manipulation, creating routes to a backend server, integrating external APIs, and using Webpack for development and production builds.'
+                challenge='I faced challenges with creating the suggestive search bar, ensuring asynchronous code execution, and setting up production and development builds with Webpack. Configuring Webpack was particularly tough, especially getting the correct entry point file and ensuring CSS styles appeared in the production build. The suggestive search bar required breaking down complex tasks into manageable steps, which was challenging but more enjoyable than configuring Webpack.'
+                contribution="To handle Webpack configuration issues, I created three config files: one for production, one for development, and a common config file for shared elements. This modular approach made it easier to identify and fix issues. Through trial and error and extensive documentation review, I eventually achieved a working configuration. For difficult features, I isolated each into its own function within the main app's logic, ensuring clarity and maintainability."
+                result="I successfully completed and passed the Front-End Web Development course with this project. However, in hindsight, I feel there are areas for improvement, particularly in visual design, which I neglected due to my focus on functionality and Webpack configuration. Initially proud, I now see opportunities to enhance the project further."
               />
             </TabPanel>
 
@@ -142,10 +141,10 @@ const ProjectsCard: React.FC = () => {
                 images={articleIMGs}
                 link='https://github.com/Michalis17/Article-analyzer-Web-App/tree/master'
                 linkName='Github link'
-                overview='As part of my Front-End Web Development Nanodegree, I built a web application that allows users to run Natural Language Processing (NLP) on articles or blogs using the Sentiment Analysis API from MeaningCloud. Users input a URL of a blog or article, and the server responds with whether the content is positive, neutral, or negative, highlighting the most relevant parts. This project introduced me to build tools like Webpack for bundling code into a production build and integrating unit testing with Jest, offering a comprehensive learning experience.'
+                overview='As part of my Front-End Web Development Nanodegree, I built a web application that uses the Sentiment Analysis API from MeaningCloud to analyze articles or blogs. Users input a URL, and the server determines whether the content is positive, neutral, or negative, highlighting the relevant parts. This project introduced me to Webpack for bundling code and Jest for unit testing.'
                 challenge='While integrating the API was straightforward, I faced significant challenges with creating a production build using Webpack and learning to write unit tests with Jest. Bundling CSS styles into the production build required finding the correct packages and configurations, which was particularly difficult. Additionally, learning Jest for unit testing was a new and enjoyable challenge, as it required adopting a new mindset for writing and structuring tests.'
-                contribution='Solving these challenges was a frustrating yet rewarding experience. When overwhelmed, I would take short breaks to clear my mind and return with a fresh perspective. Through extensive research and trial and error, I eventually configured a working production build, understanding the role of each package and configuration. For unit testing, I meticulously studied the Jest documentation and considered all possible use cases for my code, writing comprehensive tests. This approach not only improved my code quality but also instilled a habit of thoughtful coding and continuous improvement.'
-                result='The result was a functional web application with a single feature set. While the project may not be groundbreaking, it significantly expanded my web development knowledge and exposed me to essential tools used in real-world development. Completing this project has fueled my desire to learn more and deepen my understanding of these tools within a development team to create robust web applications.'
+                contribution='I addressed Webpack configuration issues through extensive research and trial and error, ultimately creating a functional production build. For unit testing, I studied the Jest documentation and wrote tests for all possible use cases, improving my code quality and coding habits.'
+                result='The result was a functional web application that met the project requirements. This project significantly expanded my web development knowledge and exposed me to essential tools used in real-world development. Completing it fuelled my desire to learn more and deepen my understanding of these tools.'
               />
             </TabPanel>
 

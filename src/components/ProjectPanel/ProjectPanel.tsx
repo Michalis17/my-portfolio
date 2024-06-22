@@ -82,7 +82,7 @@ const ProjectPanel: React.FC<Props> = (
                     <p className="font-normal text-base">{challenge}</p>
                 </div>
                 <div>
-                    <h2 className="font-semibold text-xl pb-2">My Contribution/Approach</h2>
+                    <h2 className="font-semibold text-xl pb-2">My Approach</h2>
                     <p className="font-normal text-base">{contribution}</p>
                 </div>
                 <div>
