@@ -10,7 +10,7 @@ import TsIcon from '../../assets/Icons/ts';
 import ProjectPanel from '../ProjectPanel/ProjectPanel';
 import AboutMe from '../AboutMe/AboutMe';
 // Image Imports go here:
-import weatherIMG from '../../assets/ProjectsAssets/WeatherJournal/weatherOldV.png'
+
 // Platd imgage imports
 import PlatdLandning1 from '../../assets/ProjectsAssets/PLatd/platdIMG.png'
 import PlatdLandning2 from '../../assets/ProjectsAssets/PLatd/Platd-landing-page2.png'
@@ -22,7 +22,17 @@ import PlatdLoginIMG from '../../assets/ProjectsAssets/PLatd/Platd-login.png'
 import PlatdSignupIMG from '../../assets/ProjectsAssets/PLatd/Platd-signup.png'
 import PlatdSignupIMG2 from '../../assets/ProjectsAssets/PLatd/Platd-signup2.png'
 import platdgif from '../../assets/ProjectsAssets/PLatd/PLatd-Landing-GIF.gif'
-
+// travel buddy image imports
+import TravelIMG from '../../assets/ProjectsAssets/TravelApp/travel-buddy-img2.png'
+import TravelIMG2 from '../../assets/ProjectsAssets/TravelApp/travel-buddy-img3.png'
+import TravelIMG3 from '../../assets/ProjectsAssets/TravelApp/travel-buddy-img5.png'
+// Article app imgages
+import ArticleAppIMG from '../../assets/ProjectsAssets/ArticleApp/article-app-img.png'
+import ArticleAppIMG2 from '../../assets/ProjectsAssets/ArticleApp/article-app-img2.png'
+import ArticleAppIMG3 from '../../assets/ProjectsAssets/ArticleApp/article-app-img3.png'
+// weather app
+import weatherIMG from '../../assets/ProjectsAssets/WeatherJournal/weather-app-img.png'
+import weatherIMG2 from '../../assets/ProjectsAssets/WeatherJournal/weather-app-img4.png'
 const ProjectsCard: React.FC = () => {
 
   const [show, setShow] = useState(false);
@@ -33,7 +43,6 @@ const ProjectsCard: React.FC = () => {
 
   // array of Images for each project
   const platdIMGs = [
-    
     <img src={PlatdLandning1} alt='weather' className='rounded-xl h-full object-cover' />,
     <img src={PlatdLandning2} alt='weather' className='rounded-xl h-full object-cover' />,
     <img src={PlatdLandning3} alt='weather' className='rounded-xl h-full object-cover' />,
@@ -46,13 +55,19 @@ const ProjectsCard: React.FC = () => {
     <img src={platdgif} alt='weather' className='rounded-xl h-full object-cover' />,
   ]
   const travelIMGs = [
-    <img src={weatherIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={TravelIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={TravelIMG2} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={TravelIMG3} alt='weather' className='rounded-xl h-full object-cover' />,
+    
   ]
   const articleIMGs = [
-    <img src={weatherIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={ArticleAppIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={ArticleAppIMG2} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={ArticleAppIMG3} alt='weather' className='rounded-xl h-full object-cover' />,
   ]
   const weatherIMGs = [
     <img src={weatherIMG} alt='weather' className='rounded-xl h-full object-cover' />,
+    <img src={weatherIMG2} alt='weather' className='rounded-xl h-full object-cover' />,
   ]
   return (
     <Transition
