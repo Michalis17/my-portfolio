@@ -21,7 +21,7 @@ import PlatdComIMG2 from '../../assets/ProjectsAssets/PLatd/Platd-component2.png
 import PlatdLoginIMG from '../../assets/ProjectsAssets/PLatd/Platd-login.png'
 import PlatdSignupIMG from '../../assets/ProjectsAssets/PLatd/Platd-signup.png'
 import PlatdSignupIMG2 from '../../assets/ProjectsAssets/PLatd/Platd-signup2.png'
-import platdgif from '../../assets/ProjectsAssets/PLatd/PLatd-Landing-GIF.gif'
+// import platdgif from '../../assets/ProjectsAssets/PLatd/PLatd-Landing-GIF.gif'
 // travel buddy image imports
 import TravelIMG from '../../assets/ProjectsAssets/TravelApp/travel-buddy-img2.png'
 import TravelIMG2 from '../../assets/ProjectsAssets/TravelApp/travel-buddy-img3.png'
@@ -52,7 +52,7 @@ const ProjectsCard: React.FC = () => {
     <img src={PlatdLoginIMG} alt='weather' className='rounded-xl h-full object-cover' />,
     <img src={PlatdSignupIMG} alt='weather' className='rounded-xl h-full object-cover' />,
     <img src={PlatdSignupIMG2} alt='weather' className='rounded-xl h-full object-cover' />,
-    <img src={platdgif} alt='weather' className='rounded-xl h-full object-cover' />,
+    // <img src={platdgif} alt='weather' className='rounded-xl h-full object-cover' />,
   ]
   const travelIMGs = [
     <img src={TravelIMG} alt='weather' className='rounded-xl h-full object-cover' />,
