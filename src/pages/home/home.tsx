@@ -1,22 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BackgroundBeams } from '../../components/beams/beams';
+
+import Example from '../../components/navbar/navbar';
+
+// const navLinks: JSON[] = [
+//   {name: 'home'}
+// ]
+
 const HomePage: React.FC = () => {
+  // const [activeItem, setActiveItem] = useState<string | null>(null);
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800 bg-my-black">
-        <nav className='bg-my-black fixed w-full py-2'>
-            .kwejdcf
-        </nav>
+        
+      <div className='w-full flex justify-center'>
+      <Example/>
+      </div>
+
 
       <header className=" text-white flex flex-col justify-center items-center pt-10">
-            <img src="src\assets\Mike-removebg-preview.png" alt="" className='aspect-square w-48 sm:w-96 z-10 rounded-full'  />
+            <img src="src\assets\Mike-removebg-preview.png" alt="" className='aspect-square w-48 sm:w-96 z-0 rounded-full'  />
         <div className=" w-full flex flex-col items-center justify-center p-6 relative z-20 bottom-36">
           <h1 className="text-4xl font-bold">Michalis Michaelides</h1>
           <p className="mt-2 text-xl">Frontend Developer</p>
           <p className='mt-2 text-xl'>Hi 👋, I'm a passionate developer currently learning NextJS. Striving to be the best web developer I can be.</p>
         </div>
-<BackgroundBeams />
 
+<BackgroundBeams />
       </header>
 
       <main className="container mx-auto px-6 py-10">
