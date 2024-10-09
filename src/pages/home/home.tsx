@@ -1,33 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BackgroundBeams } from '../../components/beams/beams';
+import ContactForm from '../../components/contactForm/form';
+import ExampleForm from '../../components/contactForm/headlessUIForm';
+import Example from '../../components/navbar/navbar'; // fix this component
 
-import Example from '../../components/navbar/navbar';
+import { CardDemo } from '../../components/cards/projectCard';
 
-// const navLinks: JSON[] = [
-//   {name: 'home'}
-// ]
 
 const HomePage: React.FC = () => {
   // const [activeItem, setActiveItem] = useState<string | null>(null);
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800 bg-my-black">
-        
+    <div className="min-h-screen bg-gray-100 text-gray-800 bg-my-black text-white">
+        <BackgroundBeams />
       <div className='w-full flex justify-center'>
       <Example/>
       </div>
 
 
       <header className=" text-white flex flex-col justify-center items-center pt-10">
-            <img src="src\assets\Mike-removebg-preview.png" alt="" className='aspect-square w-48 sm:w-96 z-0 rounded-full'  />
+            <img src="src\assets\Mike-removebg-preview.png" alt="" className='aspect-square w-48 sm:w-96 z-10 rounded-full'  />
         <div className=" w-full flex flex-col items-center justify-center p-6 relative z-20 bottom-36">
           <h1 className="text-4xl font-bold">Michalis Michaelides</h1>
           <p className="mt-2 text-xl">Frontend Developer</p>
           <p className='mt-2 text-xl'>Hi 👋, I'm a passionate developer currently learning NextJS. Striving to be the best web developer I can be.</p>
         </div>
 
-<BackgroundBeams />
+
       </header>
+{/* projects */}
+<section className='flex flex-row justify-evenly'>
+<CardDemo/>
+<CardDemo/>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <main className="container mx-auto px-6 py-10">
         {/* Introduction */}
@@ -53,35 +71,23 @@ const HomePage: React.FC = () => {
           </ul>
         </section>
 
-        {/* Projects */}
-        <section className="mb-10">
-          <h2 className="text-3xl font-bold mb-4">Projects</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-2">Project One</h3>
-              <p className="text-lg">A web app built using React and TailwindCSS.</p>
-              <a href="#" className="text-indigo-600 mt-2 inline-block">View Project</a>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-2">Project Two</h3>
-              <p className="text-lg">A HomePage website using TypeScript and TailwindCSS.</p>
-              <a href="" className="text-indigo-600 mt-2 inline-block">View Project</a>
-            </div>
-          </div>
-          <Link to='/projects'>more</Link>
-        </section>
+      
+       
 
         {/* Contact */}
-        <section>
-          <h2 className="text-3xl font-bold mb-4">Contact</h2>
-          <p className="text-lg">Email: <a href="mailto:john.doe@example.com" className="text-indigo-600">john.doe@example.com</a></p>
-          <p className="text-lg">LinkedIn: <a href="https://linkedin.com/in/johndoe" className="text-indigo-600">linkedin.com/in/johndoe</a></p>
+        <section className='text-black'>
+         <ContactForm/>
         </section>
+
+<section>
+<ExampleForm/>
+</section>
+
       </main>
 
       <footer className="bg-gray-800 text-white py-4">
         <div className="container mx-auto px-6 text-center">
-          <p>&copy; 2024 John Doe. All rights reserved.</p>
+          <p>&copy; 2024 Michalis Michaelides. All rights reserved.</p>
         </div>
       </footer>
     </div>
