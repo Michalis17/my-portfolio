@@ -2,11 +2,15 @@ import React, { useRef, useState } from 'react';
 
 import emailjs from '@emailjs/browser';
 
-//! create Environment variables to protect keys and stuff 
-interface ContactFormProps { }
+
+interface ContactFormProps {}
 
 const ContactForm: React.FC<ContactFormProps> = () => {
     const form = useRef<HTMLFormElement | null>(null);
+    //Variables
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     // State to manage form submission status and loading
     const [loading, setLoading] = useState<boolean>(false);
@@ -22,8 +26,8 @@ const ContactForm: React.FC<ContactFormProps> = () => {
 
         if (form.current !== null) {
             emailjs
-                .sendForm('service_uqde2bc', 'template_33ubxwr', form.current, {
-                    publicKey: 'W4Mqi4k-C9rDH00Od',
+                .sendForm(serviceID, templateID , form.current, {
+                    publicKey: publicKey,
                 })
                 .then(
                     () => {
@@ -47,7 +51,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
 
 
 <div className="max-w-md mx-auto bg-white/5 p-6 rounded-lg shadow-md text-white">
-      <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
+      <h2 className="text-xl font-semibold mb-4">Contact Me</h2>
 
       {successMessage && <p className="text-green-600 mb-4">{successMessage}</p>}
       {errorMessage && <p className="text-red-600 mb-4">{errorMessage}</p>}
@@ -55,14 +59,15 @@ const ContactForm: React.FC<ContactFormProps> = () => {
       <form ref={form} onSubmit={sendEmail}>
         <div className="mb-4">
             {/* name */}
-          <label htmlFor="from_name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
             Name
           </label>
           <input
             type="text"
-            name="from_name"
+            name="name"
+            id='name'
             required
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full px-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
           />
         </div>
 
@@ -74,8 +79,9 @@ const ContactForm: React.FC<ContactFormProps> = () => {
           <input
             type="email"
             name="email"
+            id='email'
             required
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full px-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
           />
         </div>
 
@@ -86,8 +92,9 @@ const ContactForm: React.FC<ContactFormProps> = () => {
           </label>
           <textarea
             name="message"
+            id='message'
             required
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full px-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
           />
         </div>
 
