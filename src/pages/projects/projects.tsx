@@ -1,3 +1,6 @@
+// ! TEST Hero Parallax COMPONENT
+
+
 import React from 'react'
 
 const ProjectsPage: React.FC = () => {

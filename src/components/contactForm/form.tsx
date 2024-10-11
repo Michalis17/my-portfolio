@@ -51,7 +51,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
 
 
 <div className="max-w-md mx-auto bg-white/5 p-6 rounded-lg shadow-md text-white">
-      <h2 className="text-xl font-semibold mb-4">Contact Me</h2>
+      <h2 className="text-xl font-semibold mb-4 text-center">Contact Me</h2>
 
       {successMessage && <p className="text-green-600 mb-4">{successMessage}</p>}
       {errorMessage && <p className="text-red-600 mb-4">{errorMessage}</p>}
@@ -59,7 +59,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
       <form ref={form} onSubmit={sendEmail}>
         <div className="mb-4">
             {/* name */}
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700 p-2">
             Name
           </label>
           <input
@@ -67,13 +67,13 @@ const ContactForm: React.FC<ContactFormProps> = () => {
             name="name"
             id='name'
             required
-            className="mt-1 block w-full px-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
+            className="mt-1 block w-full px-3 py-2 border-2 border-white/5 rounded-md shadow-sm focus:outline-none focus:ring-my-blue-900 focus:border-my-blue-900 text-white bg-white/5"
           />
         </div>
 
         <div className="mb-4">
             {/* email */}
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700 p-2">
             Email
           </label>
           <input
@@ -81,27 +81,27 @@ const ContactForm: React.FC<ContactFormProps> = () => {
             name="email"
             id='email'
             required
-            className="mt-1 block w-full px-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
+            className="mt-1 block w-full px-3 py-2 border-2 border-white/5 rounded-md shadow-sm focus:outline-none focus:ring-my-blue-900 focus:border-my-blue-900 text-white bg-white/5"
           />
         </div>
 
         <div className="mb-4">
             {/* message */}
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700 p-2">
             Message
           </label>
           <textarea
             name="message"
             id='message'
             required
-            className="mt-1 block w-full px-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
+            className="mt-1 block w-full px-3 py-2 border-2 border-white/5 rounded-md shadow-sm focus:outline-none focus:ring-my-blue-900 focus:border-my-blue-900 text-white bg-white/5"
           />
         </div>
 
         <div>
           <button
             type="submit"
-            className="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 focus:outline-none"
+            className="w-full py-2 px-4 bg-my-blue-900   text-white font-semibold rounded-md shadow-md hover:bg-my-blue-600 focus:outline-none"
             disabled={loading}
           >
             {loading ? (

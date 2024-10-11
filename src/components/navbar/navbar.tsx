@@ -12,7 +12,7 @@ const  Navbar: React.FC<NavbarProps> = ({
 })=> {
 
   return (
-    <div className="flex  w-full justify-center pt-20 z-30">
+    <div className="flex  w-full justify-center py-6 z-30">
       <div className="flex gap-8">
         <div
         onClick={() => scrollToSection(aboutRef)}
