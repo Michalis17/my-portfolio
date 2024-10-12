@@ -8,6 +8,11 @@ import Footer from '../../components/Footer/footer';
 
 import SkillsSection from '../../components/skills/skills';
 
+//imgs 
+import nanoDegree from '../../assets/image.png'
+import platdImg from '../../assets/ProjectsAssets/PLatd/HomepagePLATD.png'
+import legalFirmImg from '../../assets/ProjectsAssets/legalfirm/legalpageUI.png'
+
 // testing hero paralax
 import { HeroParallax } from '../../components/hero-paralax/hero-paralax';
 
@@ -23,22 +28,19 @@ const HomePage: React.FC = () => {
   };
 
 const products:{title:string, link:string, thumbnail:string}[] = [{
-  title: "Moonbeam",
-  link: "https://gomoonbeam.com",
-  thumbnail:
-    "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+  title: "Platd",
+  link: "https://platd.io/",
+  thumbnail: platdImg,
 },
 {
-  title: "Cursor",
-  link: "https://cursor.so",
-  thumbnail:
-    "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+  title: "Legal Firm's website",
+  link: "#",
+  thumbnail: legalFirmImg,
 },
 {
-  title: "Rogue",
-  link: "https://userogue.com",
-  thumbnail:
-    "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+  title: "Front End Web Development Course",
+  link: "https://github.com/Michalis17",
+  thumbnail: nanoDegree,
 },]
 
 

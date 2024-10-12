@@ -7,7 +7,7 @@ import {
   MotionValue,
 } from "framer-motion";
 
-
+import profileImg from '../../assets/Mike-removebg-preview.png'
 
 export const HeroParallax = ({
   products,
@@ -33,10 +33,10 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 1], [0, 100]),
     springConfig
   );
-  const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -100]),
-    springConfig
-  );
+  // const translateXReverse = useSpring(
+  //   useTransform(scrollYProgress, [0, 1], [0, -100]),
+  //   springConfig
+  // );
   const rotateX = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
     springConfig
@@ -103,7 +103,7 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto  px-4 w-full  left-0 top-0 flex flex-col items-center">
-        <img src="src\assets\Mike-removebg-preview.png" alt="" className='aspect-square w-40 z-50 rounded-full relative' />
+        <img src={profileImg}alt="" className='aspect-square w-60 z-50 rounded-full relative top-12' />
       <h1 className="text-2xl md:text-4xl font-bold dark:text-white relative z-50">
         Michalis Michaelides<br />Frontend Developer
       </h1>
