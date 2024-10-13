@@ -32,7 +32,7 @@ const  Navbar: React.FC<NavbarProps> = ({
                 <p className="font-semibold text-white">Platd</p>
                 <p className="text-white/50">A marketplace platform for digital cookbooks</p>
               </Link>
-              <Link className="block rounded-lg py-2 px-3 transition hover:bg-white/20" to={''}>
+              <Link className="block rounded-lg py-2 px-3 transition hover:bg-white/20" to={'/legal-firm-landing-page'}>
                 <p className="font-semibold text-white">Corporate Website</p>
                 <p className="text-white/50">A website for a legal firm</p>
               </Link>

@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
+import { HeroParallax } from '../../components/hero-paralax/hero-paralax';
 import { BackgroundBeams } from '../../components/beams/beams';
 import ContactForm from '../../components/contactForm/form';
-import Navbar from '../../components/navbar/navbar'; // fix this component
+import Navbar from '../../components/navbar/navbar'; 
 
 import AboutSection from '../../components/about/about';
 import Footer from '../../components/Footer/footer';
@@ -14,7 +15,6 @@ import platdImg from '../../assets/ProjectsAssets/PLatd/HomepagePLATD.png'
 import legalFirmImg from '../../assets/ProjectsAssets/legalfirm/legalpageUI.png'
 
 // testing hero paralax
-import { HeroParallax } from '../../components/hero-paralax/hero-paralax';
 
 const HomePage: React.FC = () => {
   // Creating refs for sections
@@ -56,11 +56,11 @@ const products:{title:string, link:string, thumbnail:string}[] = [{
       <main className="container mx-auto px-6 pt-40 relative flex flex-col gap-40 ">
         <BackgroundBeams />
         {/* about */}
-        <section ref={aboutRef} className="">
+        <section ref={aboutRef} className="flex justify-center">
           <AboutSection />
         </section>
         {/* Skills */}
-        <section className="">
+        <section>
           <SkillsSection />
         </section>
         {/* Contact */}

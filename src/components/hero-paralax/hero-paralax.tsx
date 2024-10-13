@@ -104,10 +104,10 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto  px-4 w-full  left-0 top-0 flex flex-col items-center">
         <img src={profileImg}alt="" className='aspect-square w-60 z-50 rounded-full relative top-12' />
-      <h1 className="text-2xl md:text-4xl font-bold dark:text-white relative z-50">
+      <h1 className="text-2xl md:text-4xl font-bold dark:text-white relative z-50 text-center">
         Michalis Michaelides<br />Frontend Developer
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 relative z-50">
+      <p className="max-w-2xl min-w-48 text-base md:text-xl mt-8 dark:text-neutral-200 relative z-50 text-center">
         I build beautiful web apps with the latest technologies and frameworks.
         Driven to create the best digital experiences for your customers and clients.
       </p>

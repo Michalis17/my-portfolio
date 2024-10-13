@@ -18,14 +18,14 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ imageUrls }) => {
     };
 
     return (
-        <div className="relative aspect-square ">
+        <div className="relative aspect-[12/7]">
             {/* Display the current image */}
 
             <div className='w-full h-full flex overflow-hidden '>
                 {imageUrls.map(url => (
                     <img
                         key={url}
-                        className='object-cover h-full w-full block flex-shrink-0 flex-grow-0 transi'
+                        className='object-contain h-full w-full block flex-shrink-0 flex-grow-0 transi'
                         style={{ translate: `${-100 * index}%`, transition: 'translate 700ms ease-in-out' }}
                         src={url}
                         alt={`Image ${index + 1}`}
