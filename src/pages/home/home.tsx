@@ -9,11 +9,13 @@ import Footer from '../../components/Footer/footer';
 
 import SkillsSection from '../../components/skills/skills';
 
-//imgs 
+// Hero images
 import nanoDegree from '../../assets/image.png'
 import platdImg from '../../assets/ProjectsAssets/PLatd/HomepagePLATD.png'
 import legalFirmImg from '../../assets/ProjectsAssets/legalfirm/legalpageUI.png'
 
+//scroll effects 
+import { Fade } from 'react-awesome-reveal';
 // testing hero paralax
 
 const HomePage: React.FC = () => {
@@ -57,15 +59,18 @@ const products:{title:string, link:string, thumbnail:string}[] = [{
         <BackgroundBeams />
         {/* about */}
         <section ref={aboutRef} className="flex justify-center">
-          <AboutSection />
+          <Fade triggerOnce><AboutSection /></Fade>
+          
         </section>
         {/* Skills */}
         <section>
-          <SkillsSection />
+          <Fade triggerOnce><SkillsSection /></Fade>
+          
         </section>
         {/* Contact */}
         <section ref={contactRef} className='text-black z-50 relative'>
-          <ContactForm />
+          <Fade triggerOnce ><ContactForm /></Fade>
+          
         </section>
       </main>
       <Footer />
