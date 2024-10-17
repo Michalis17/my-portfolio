@@ -13,19 +13,28 @@ const SecondProject: React.FC = () => {
 
 
 
-    <div className='min-h-screen bg-gray-100 text-gray-800 bg-my-black text-white relative flex flex-col items-center'>
+    <div className=' bg-my-black text-white relative flex flex-col items-center '>
+      {/* Back Link */}
+      <div className='w-full flex items-end p-3 fixed bg-my-black'>
+        <Link to={'/'} className='z-50 p-2 flex items-end justify-center text-white/35 hover:text-white/90   bg-my-blue-900/50 hover:bg-my-blue-900/100  rounded-2xl  text-center text-xl font-extrabold'><p className='aspect-square w-10 text-2xl'>{'<'}</p></Link>
+      </div>
+      {/* Container of all the content including slider  */}
+      <div className='relative  flex flex-col justify-between gap-5 items-center mt-28 lg:mt-0'>
+        {/* Heading with slide animation  */}
+        <Slide direction='down' triggerOnce>
+          <h1 className='text-4xl font-semibold text-center underline my-3'>Legal firms landing page.</h1>
+        </Slide>
+        {/* Image slider with slide animation */}
+        <Slide direction='up' triggerOnce>
+          <div className='md:h-[400px] bg-white/10 rounded-md flex justify-center p-6'>
+            <ImageSlider imageUrls={images} />
+          </div>
+        </Slide>
 
-      <div className='flex items-end w-full p-3 fixed '><Link to={'/'} className='p-3 bg-slate-500/5 hover:bg-my-blue-300/20  rounded-2xl w-14 text-center text-xl font-extrabold'>{'<'}</Link></div>
-      <Slide direction='down' triggerOnce>
-        <h1 className='text-4xl font-semibold text-center underline my-3'>Legal Firm's Landing Page</h1></Slide>
-      <Slide direction='up' triggerOnce>
-        <div className='md:h-[400px] bg-white/10 rounded-md flex justify-center p-6'>
+        {/* Link to product or project view or demo */}
+        <a href="https://platd.io/" className='hidden w-fit hover:text-my-blue-400 border border-my-blue-900 p-3 rounded-md hover:bg-my-blue-900/40 '>View Product</a>
 
-          <ImageSlider imageUrls={images} />
 
-        </div>
-      </Slide>
-      {/* <a href="https://platd.io/" className='hover:text-my-blue-400 border border-my-blue-900 p-3 rounded-md hover:bg-my-blue-900/40 mt-2'>View Product</a> */}
 
       <div className='flex flex-col gap-4 p-6 max-w-2xl'>
         <Fade>
@@ -43,6 +52,7 @@ const SecondProject: React.FC = () => {
         </Fade>
       </div>
       <Footer />
+      </div>
     </div>
   )
 }
