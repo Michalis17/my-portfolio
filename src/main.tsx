@@ -4,10 +4,12 @@ import App from './App.tsx'
 import './index.css'
 import './styles/tailwind.css'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
     <Analytics/>
+    <SpeedInsights/>
   </React.StrictMode>,
 )
